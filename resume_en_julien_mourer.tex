@@ -1,0 +1,95 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.9in,bottom=0in,top=0.4in]{geometry}
+%\usepackage{enumitem}
+
+
+\moderncvtheme[burgundy]{classic}
+%\setlength{\hintscolumnwidth}{3cm}
+%\setlength{\makecvheadnamewidth}{5.6cm}
+%\recomputelengths
+%\setlength{\parskip}{0em}
+%\setlist[itemize]{noitemsep, topsep=0pt}
+
+%\addtolength{\topmargin}{-.8in}
+%\addtolength{\textheight}{1in}
+
+\name{Julien}{Mourer}
+\title{Full Stack Web Developer\vspace*{20pt}}
+\AtBeginDocument{\hypersetup{pdftitle = {Julien Mourer - Full Stack Web Developer}}}
+
+\address{9 rue Jocelyn}{69740 Genas, France}
+\social[github]{getkey}
+\homepage{https://getkey.eu}
+\phone[mobile]{+33~651~144~399}
+\email{julien.mourer@gmx.fr}
+\social[linkedin]{julien-mourer}
+\extrainfo{19 years old}
+
+%\usepackage{etoolbox}
+%\patchcmd{\makecvtitle}{{minipage}[b]}{{minipage}[b]}{}{}
+%\patchcmd{\makecvtitle}{{tabular}[b]}{{tabular}}{}{}
+
+\newcommand{\skillitem}[2]{
+	\cvitem[0em]{\textcolor{color1}{#1}}{
+		\begin{itemize}%[noitemsep,topsep=0pt]
+		\setlength\itemsep{0em}
+			#2
+		\end{itemize}
+	}
+}
+
+\newcommand{\projectitem}[3]{
+	\cvitem{#1}{\textbf{#2}: #3}
+}
+
+\begin{document}
+
+\makecvtitle
+
+\vspace*{-30pt}
+
+\section{Education}
+\cventry{2015--2017}{DUT}{Grenoble Alpes University}{Grenoble}{}{Equivalent: Bachelor of Computer Science}  % arguments 3 to 6 can be left empty
+\cventry{2015}{Scientific Baccalauréat}{Lycée Charlie Chaplin}{Lyon}{}{Equivalent: High School Diploma}
+
+
+\section{Projects}
+\projectitem{2016}{\href{http://stereotypemap.info}{Stereotype Map}}{Fetches stereotypes from Google Suggestions and display them on a map.}
+\projectitem{2016}{\href{http://mywedding.gdn}{MyWedding}}{A website to facilitate wedding organization and communication with guests. Lead developer in a 4-month school project with 5 other classmates.}
+\projectitem{2016}{\href{https://github.com/KordonBleu/enslavism}{Enslavism}}{Framework to help deploying distributed WebRTC peer servers.}
+\projectitem{2016}{\href{https://github.com/getkey/rush}{Rush}}{A simple shell with a rudimentary script language.}
+\projectitem{2015-2016}{\href{http://jumpsuit.space/}{JumpSuit}}{A multiplayer web game that supports modding, and has a decentralized architecture, which is yet unseen on the web!}
+\projectitem{2015}{\href{https://github.com/KordonBleu/vinage}{Vinage}}{A library to detect collisions. Supports \href{https://en.wikipedia.org/wiki/Wraparound_(video_games)}{wrap-around}. Its cache makes it super fast!}
+
+\section{Languages}
+\cvitem{English}{Fluent}
+\cvitem{French}{Native speaker}
+\cvitem{German}{Basic conversational abilities}
+
+\section{Skills}
+\skillitem{Web development}{
+\item JavaScript (ES5 \& ES6), Vue.js, Vuex
+	\item PostgreSQL, MongoDB
+	\item HTML, CSS, Stylus
+	\item Node.js, PHP, Nginx, Apache
+	\item Express, Koa
+	\item Rollup, Babel
+}
+\skillitem{Software development}{
+	\item UML, design patterns
+	\item C/C++, Java, Python, Rust
+}
+\skillitem{Online multiplayer game development}{
+	\item Authoritative server, prediction
+	\item Custom protocols, Protobuf
+	\item Websockets, WebRTC, UDP
+}
+
+\section{Interests}
+\cvitem{Skiing}{Grenoble is surrounded by mountains - winter is awesome!}
+\cvitem{Design}{I took a 6-month design course to be able to do freelance work. I fell in love with the discipline.}
+\cvitem{Chiptune}{I love this genre. Sometimes I try to compose.}
+
+\end{document}
