@@ -1,0 +1,84 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.9in,bottom=0in,top=0.6in]{geometry}
+%\usepackage{enumitem}
+
+
+\moderncvtheme[burgundy]{classic}
+
+\name{Julien}{Mourer}
+\title{Développeur Web Full Stack\vspace*{20pt}}
+\AtBeginDocument{\hypersetup{pdftitle = {Julien Mourer - Full Stack Web Developer}}}
+
+\address{9 rue Jocelyn}{69740 Genas, France}
+\social[github]{getkey}
+\homepage{https://getkey.eu}
+\phone[mobile]{+33~6~51~14~43~99}
+\email{julien.mourer@gmx.fr}
+\social[linkedin]{julien-mourer}
+\extrainfo{19 ans}
+
+
+\newcommand{\skillitem}[2]{
+	\cvitem[0em]{\textcolor{color1}{#1}}{
+		\begin{itemize}%[noitemsep,topsep=0pt]
+		\setlength\itemsep{0em}
+			#2
+		\end{itemize}
+	}
+}
+
+\newcommand{\projectitem}[3]{
+	\cvitem{#1}{\textbf{#2}: #3}
+}
+
+\begin{document}
+
+\makecvtitle
+
+\vspace*{-30pt}
+
+\section{Cursus scolaire}
+\cventry{2015--2017}{DUT}{Université Grenoble Alpes}{Grenoble}{}{}
+\cventry{2015}{Bac S}{Lycée Charlie Chaplin}{Décines-Charpieu}{}{}
+
+
+\section{Projets}
+\projectitem{2016}{\href{http://stereotypemap.info}{Stereotype Map}}{Carte des stéréotypes de chaque pays (obtenus à partir de Google Suggestions).}
+\projectitem{2016}{\href{http://mywedding.gdn}{MyWedding}}{Site web pour faciliter l'organisation de mariage et la communication avec les invités. Chef de projet (projet universitaire).}
+\projectitem{2016}{\href{https://github.com/KordonBleu/enslavism}{Enslavism}}{Framework pour faciliter le déploiement de serveurs WebRTC distribués.}
+\projectitem{2016}{\href{https://github.com/getkey/rush}{Rush}}{Shell avec un language de script rudimentaire.}
+\projectitem{2015-2016}{\href{http://jumpsuit.space/}{JumpSuit}}{Jeu multijoueur supportant le modding, et qui a une architecture distribuée. C'est le premier jeu à utiliser WebRTC pour la communication client-serveur !}
+\projectitem{2015}{\href{https://github.com/KordonBleu/vinage}{Vinage}}{Librairie de détection de collision qui supporte le \href{https://en.wikipedia.org/wiki/Wraparound_(video_games)}{wrap-around}. Son système de cache la rend très rapide!}
+
+\section{Langues}
+\cvitem{Français}{Langue maternelle}
+\cvitem{Anglais}{Courant}
+\cvitem{Allemand}{Compétences basiques}
+
+\section{Compétences}
+\skillitem{Développement Web}{
+\item JavaScript (ES5 \& ES6), Vue.js, Vuex
+	\item PostgreSQL, MongoDB
+	\item HTML, CSS, Stylus
+	\item Node.js, PHP, Nginx, Apache
+	\item Express, Koa
+	\item Rollup, Babel
+}
+\skillitem{Développement logiciel}{
+	\item UML, design patterns
+	\item C/C++, Java, Python, Rust
+}
+\skillitem{Développement de jeux en ligne}{
+	\item Serveur authoritaire, prédiction
+	\item Protocoles custom, Protobuf
+	\item Websockets, WebRTC, UDP
+}
+
+\section{Centres d'intérêt}
+\cvitem{Ski}{Grenoble est entouré de montagnes et c'est idéal pour le ski !}
+\cvitem{Design}{J'ai suivi un cours de 6 mois pour pouvoir travailler en freelance. J'ai découvert que j'adore cette discipline.}
+\cvitem{Chiptune}{J'aime beaucoup ce genre. J'essaie parfois de composer.}
+
+\end{document}
